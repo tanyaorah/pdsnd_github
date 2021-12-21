@@ -66,10 +66,10 @@ def load_data(city, month, day):
     """
     df = pd.read_csv(CITY_DATA[city])
     # Display 5 rows of raw data
-    view_data = input('\nWould you like to view 5 rows of raw data? Enter yes or no\n').lower()
+    see_data = input('\nWould you like to view 5 rows of raw data? Enter yes or no\n').lower()
     start_loc = 0
     while True:
-        if view_data == "yes":
+        if see_data == "yes":
             print(df.iloc[start_loc:start_loc + 5])
             start_loc += 5
         see_display = input("Do you wish to continue?: Enter yes or no\n").lower()
